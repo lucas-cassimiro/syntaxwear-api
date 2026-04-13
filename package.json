@@ -1,0 +1,62 @@
+{
+  "name": "syntax-wear-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "test:coverage": "vitest --coverage",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev",
+    "prisma:studio": "prisma studio",
+    "prisma:seed": "tsx prisma/seed.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dev-em-Dobro/syntax-wear-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Dev-em-Dobro/syntax-wear-api/issues"
+  },
+  "homepage": "https://github.com/Dev-em-Dobro/syntax-wear-api#readme",
+  "dependencies": {
+    "@fastify/cookie": "^11.0.2",
+    "@fastify/cors": "^11.1.0",
+    "@fastify/csrf-protection": "^7.1.0",
+    "@fastify/helmet": "^13.0.2",
+    "@fastify/jwt": "^10.0.0",
+    "@fastify/swagger": "^9.6.1",
+    "@prisma/client": "^5.7.1",
+    "@scalar/fastify-api-reference": "^1.40.0",
+    "bcrypt": "^6.0.0",
+    "decimal.js": "^10.6.0",
+    "dotenv": "^17.2.3",
+    "fastify": "^5.6.2",
+    "fastify-raw-body": "^5.0.0",
+    "fastify-type-provider-zod": "^6.1.0",
+    "google-auth-library": "^10.5.0",
+    "slugify": "^1.6.6",
+    "stripe": "^17.7.0",
+    "zod": "^4.1.13"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^6.0.0",
+    "@types/node": "^24.10.1",
+    "@vitest/browser-playwright": "^4.0.15",
+    "@vitest/coverage-v8": "^4.0.15",
+    "@vitest/ui": "^4.0.15",
+    "prisma": "^5.7.1",
+    "tsup": "^8.5.1",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.15"
+  }
+}

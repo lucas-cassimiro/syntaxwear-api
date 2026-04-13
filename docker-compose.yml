@@ -1,0 +1,10 @@
+services:
+  ecommerce-db:
+    image: postgres:15
+    container_name: ecommerce-db
+    environment:
+      POSTGRES_USER: docker
+      POSTGRES_PASSWORD: docker
+      POSTGRES_DB: ecommerce
+    ports:
+      - "5432:5432"
